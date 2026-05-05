@@ -1,0 +1,17 @@
+def verificar_nivel(valor):
+    if valor < 0:
+        return "Negativo"
+    elif valor < 10:
+        return "Baixo"
+    else:
+        return "Alto"
+    
+# o que sera impresso ?
+print(verificar_nivel(5))
+print(verificar_nivel(15))
+print(verificar_nivel(-1))
+
+resultado final:
+Baixo
+Alto
+Negativo
