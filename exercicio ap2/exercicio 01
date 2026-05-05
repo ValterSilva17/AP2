@@ -1,0 +1,11 @@
+def calcular_fatura(minutos):
+    taxa_fixa = 20.00
+    custo_por_minuto = 0.50
+   
+    total = taxa_fixa + (minutos * custo_por_minuto)
+    return total
+
+minutos_usados = float(input("Digite a quantidade de minutos utilizados: "))
+valor_final = calcular_fatura(minutos_usados)
+
+print(f"O valor total da fatura é: R$ {valor_final:.2f}")
