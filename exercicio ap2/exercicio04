@@ -1,0 +1,16 @@
+palavra_alvo = input("Digite a palavra a ser buscada: ").lower()
+
+try:
+    
+    with open("votos.txt", "r", encoding="utf-8") as arquivo:
+       
+        conteudo = arquivo.read().lower() 
+       
+        palavras = conteudo.split()   
+       
+        total = palavras.count(palavra_alvo)
+       
+    print(f"A palavra '{palavra_alvo}' foi encontrada {total} vezes.")
+
+except FileNotFoundError:
+    print("Erro: O arquivo 'votos.txt' não foi encontrado na pasta.")
